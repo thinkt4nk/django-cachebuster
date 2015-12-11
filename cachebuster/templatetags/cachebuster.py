@@ -58,21 +58,18 @@ class CacheBusterTag(template.Node):
             url_prepend = getattr(settings, "STATIC_URL", settings.MEDIA_URL)
             unique_prepend = getattr(settings, 'CACHEBUSTER_PREPEND_STATIC', False)
 
-            print 'path =', path
             if '#' in path:
                 filepath = path.split('#')[0]
                 hash = '#' + '#'.join(path.split('#')[1:])
             else:
                 filepath = path
                 hash = ''
-            print 'filepath =', filepath
 
             if settings.DEBUG and finders:
                 absolute_path = finders.find(filepath)
             else:
                 # django versions < 1.3 don't have a STATIC_ROOT, so fall back to MEDIA_ROOT
                 absolute_path = os.path.join(getattr(settings, 'STATIC_ROOT', settings.MEDIA_ROOT), filepath)
-            print 'absolute path = ', absolute_path
 
             if self.force_timestamp:
                 unique_string = self.get_file_modified(absolute_path)
