@@ -164,7 +164,7 @@ Please feel free to send a pull request with fixes and in particular, additional
 Source
 ------
 
-The latest source code can always be found here: `github.com/jaddison/django-cachebuster <http://github.com/jaddison/django-cachebuster/>`_
+The latest source code can always be found here: `github.com/ambitioninc/django-cachebuster <http://github.com/ambitioninc/django-cachebuster/>`_
 
 
 Credits
@@ -182,4 +182,4 @@ django-cachebuster is Copyright (c) 2011, James Addison. It is free software, an
 Questions, Comments, Concerns:
 ------------------------------
 
-Feel free to open an issue here: `github.com/jaddison/django-cachebuster/issues <http://github.com/jaddison/django-cachebuster/issues/>`_
+Feel free to open an issue here: `github.com/ambitioninc/django-cachebuster/issues <http://github.com/ambitioninc/django-cachebuster/issues/>`_
